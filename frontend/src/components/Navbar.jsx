@@ -98,7 +98,17 @@ const Navbar = () => {
           <li className='py-1'>CONTACT</li>
           <hr className='border-none outline-none h-0.5 bg-primary w-full rounded-full m-auto hidden motion-preset-pop motion-duration-500' />
         </NavLink>
-       
+        {/* go to admin-doctor panel */}
+        {!token && (
+          <NavLink
+            to={'https://booking-admin-snowy.vercel.app'}
+            target='_blank'
+          >
+            <button className='px-3 py-2 w-fit border border-gray-200 bg-gray-100 text-black rounded flex items-center gap-1'>
+              <WordRotate words={['Admin', 'Doctor']} /> Login
+            </button>
+          </NavLink>
+        )}
       </ul>
 
       <div className='flex items-center'>
@@ -232,7 +242,22 @@ const Navbar = () => {
                 <hr className='border-none outline-none h-0.5 bg-primary w-full rounded-full m-auto hidden' />
               </NavLink>
 
-             
+              {/* go to Admin/doctor panel login */}
+              {!token && (
+                <NavLink
+                  to={'https://booking-admin-snowy.vercel.app'}
+                  target='_blank'
+                >
+                  <button className='mb-6 min-w-[124px] h-10 bg-primary text-white font-normal rounded relative'>
+                    <span className='absolute top-1/2 -translate-y-1/2 left-3'>
+                      <WordRotate words={['Admin', 'Doctor']} />
+                    </span>
+                    <span className='absolute top-1/2 -translate-y-1/2 right-3'>
+                      Login
+                    </span>
+                  </button>
+                </NavLink>
+              )}
             </ul>
           </div>
         </div>
