@@ -79,13 +79,13 @@ const DoctorAppointments = () => {
             src={selectedImage}
             alt='Enlarged view'
             draggable='false'
-            className='size-[300px] sm:size-[450px] object-cover rounded-2xl border bg-primary select-none motion-preset-expand motion-duration-300'
+            className='size-[300px] sm:size-[450px] object-cover rounded-2xl border bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500 text-white select-none motion-preset-expand motion-duration-300'
             onClick={e => e.stopPropagation()}
           />
         </div>
       )}
 
-      <h1 className='text-2xl mt-3 sm:mt-0 sm:text-3xl font-semibold px-1 tracking-wide text-primary select-none'>
+      <h1 className='text-2xl mt-3 sm:mt-0 sm:text-3xl font-semibold px-1 tracking-wide text-emerald-500 select-none'>
         All Appointments
       </h1>
 
@@ -185,7 +185,7 @@ const DoctorAppointments = () => {
                             <TooltipContent
                               side='left'
                               align='center'
-                              className='px-3 py-2 mr-1 text-center rounded-[6px] text-xs tracking-widest border-none bg-primary text-white'
+                              className='px-3 py-2 mr-1 text-center rounded-[6px] text-xs tracking-widest border-none bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500 text-white'
                             >
                               Cancel <br /> Appointment
                             </TooltipContent>
@@ -207,7 +207,7 @@ const DoctorAppointments = () => {
                             <TooltipContent
                               side='right'
                               align='center'
-                              className='px-3 py-2 ml-1 text-center rounded-[6px] text-xs tracking-widest border-none bg-primary text-white'
+                              className='px-3 py-2 ml-1 text-center rounded-[6px] text-xs tracking-widest border-none bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500  text-white'
                             >
                               Mark as <br /> Completed
                             </TooltipContent>

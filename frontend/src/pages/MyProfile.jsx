@@ -293,7 +293,7 @@ const MyProfile = () => {
               <button
                 onClick={updateUserProfileData}
                 disabled={!hasChanges() || loading}
-                className={`flex text-sm items-center font-medium min-w-fit gap-2 bg-primary text-white py-2.5 px-4 rounded transition-all duration-200 ease-linear ${
+                className={`flex text-sm items-center font-medium min-w-fit gap-2 bg-black text-white py-2.5 px-4 rounded transition-all duration-200 ease-linear ${
                   !hasChanges() || loading
                     ? 'opacity-50 cursor-not-allowed'
                     : 'hover:opacity-90'
@@ -312,7 +312,7 @@ const MyProfile = () => {
           ) : (
             <button
               onClick={handleEditClick}
-              className='flex text-sm items-center font-medium min-w-fit gap-2 w-fit bg-primary text-white py-2.5 px-4 rounded hover:opacity-90 transition-all duration-200 ease-linear'
+              className='flex text-sm items-center font-medium min-w-fit gap-2 w-fit bg-black text-white py-2.5 px-4 rounded hover:opacity-90 transition-all duration-200 ease-linear'
             >
               Edit
               <span>

@@ -282,7 +282,7 @@ const MyAppointments = () => {
                     {!item.cancelled && !item.payment && !item.isCompleted && (
                       <button
                         onClick={() => appointmentRazorpay(item._id)}
-                        className={`text-sm text-center min-w-48 px-2.5 py-2.5 md:px-4 md:py-3 border rounded bg-primary text-white transition-all duration-200 ease-in-out ${
+                        className={`text-sm text-center min-w-48 px-2.5 py-2.5 md:px-4 md:py-3 border rounded bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500 text-white transition-all duration-200 ease-in-out ${
                           loadingPayment[item._id]
                             ? 'opacity-50 cursor-not-allowed flex items-center justify-center gap-3'
                             : 'hover:opacity-90 active:scale-[90%]'

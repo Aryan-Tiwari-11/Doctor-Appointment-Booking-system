@@ -31,7 +31,7 @@ const Dashboard = () => {
   if (isLoading) {
     return (
       <div className='w-full sm:w-1/2 h-[calc(100vh-80px)] flex items-center justify-center'>
-        <Loader2 className='size-14 animate-spin text-primary' />
+        <Loader2 className='size-14 animate-spin text-emerald-500' />
       </div>
     )
   }
@@ -55,7 +55,7 @@ const Dashboard = () => {
           </div>
         )}
 
-        <h1 className='text-2xl mt-3 sm:mt-0 sm:text-3xl font-semibold px-1 tracking-wide text-primary select-none motion-translate-x-in-[0%] motion-translate-y-in-[-10%] motion-duration-[0.38s] motion-ease-spring-bouncier'>
+        <h1 className='text-2xl mt-3 sm:mt-0 sm:text-3xl font-semibold px-1 tracking-wide text-emerald-500 select-none motion-translate-x-in-[0%] motion-translate-y-in-[-10%] motion-duration-[0.38s] motion-ease-spring-bouncier'>
           Overview
         </h1>
 
@@ -63,7 +63,7 @@ const Dashboard = () => {
           {/* ----------- glimpse ------------ */}
           <div className='flex flex-col sm:flex-row items-center justify-center gap-4'>
             {/* doctors */}
-            <div className='bg-white border p-3.5 sm:pl-4 sm:pr-12 sm:py-4 min-w-52 rounded-xl flex items-center gap-4 group hover:bg-primary hover:shadow-xl hover:border-transparent hover:cursor-none transition-all duration-300 ease-in-out'>
+            <div className='bg-white border p-3.5 sm:pl-4 sm:pr-12 sm:py-4 min-w-52 rounded-xl flex items-center gap-4 group hover:bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500 text-white hover:shadow-xl hover:border-transparent hover:cursor-none transition-all duration-300 ease-in-out'>
               <img
                 className='size-12 sm:size-16 rounded-full select-none'
                 draggable='false'
@@ -80,7 +80,7 @@ const Dashboard = () => {
               </div>
             </div>
             {/* patients */}
-            <div className='bg-white border p-3.5 sm:pl-4 sm:pr-12 sm:py-4 min-w-52 rounded-xl flex items-center gap-4 group hover:bg-primary hover:shadow-xl hover:border-transparent hover:cursor-none transition-all duration-300 ease-in-out'>
+            <div className='bg-white border p-3.5 sm:pl-4 sm:pr-12 sm:py-4 min-w-52 rounded-xl flex items-center gap-4 group hover:bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500 text-white hover:shadow-xl hover:border-transparent hover:cursor-none transition-all duration-300 ease-in-out'>
               <img
                 className='size-12 sm:size-16 rounded-full select-none'
                 draggable='false'
@@ -97,7 +97,7 @@ const Dashboard = () => {
               </div>
             </div>
             {/* appointments */}
-            <div className='bg-white border p-3.5 sm:pl-4 sm:pr-12 sm:py-4 min-w-52 rounded-xl flex items-center gap-4 group hover:bg-primary hover:shadow-xl hover:border-transparent hover:cursor-none transition-all duration-300 ease-in-out'>
+            <div className='bg-white border p-3.5 sm:pl-4 sm:pr-12 sm:py-4 min-w-52 rounded-xl flex items-center gap-4 group hover:bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500 text-white hover:shadow-xl hover:border-transparent hover:cursor-none transition-all duration-300 ease-in-out'>
               <img
                 className='size-12 sm:size-16 rounded-full select-none'
                 draggable='false'
@@ -173,7 +173,7 @@ const Dashboard = () => {
                           <TooltipContent
                             side='top'
                             align='center'
-                            className='px-2.5 py-2 mb-1 rounded-[6px] border-none bg-primary text-white text-xs tracking-wide'
+                            className='px-2.5 py-2 mb-1 rounded-[6px] border-none bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500 text-white text-xs tracking-wide'
                           >
                             Cancel Appointment
                           </TooltipContent>

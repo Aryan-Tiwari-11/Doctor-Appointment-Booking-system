@@ -153,7 +153,7 @@ const Appointment = () => {
         <div className='flex flex-col sm:flex-row gap-4'>
           <div>
             <img
-              className='bg-primary w-full sm:max-w-72 rounded-lg'
+              className='bg-blue-50 hover:bg-blue-100 w-full sm:max-w-72 rounded-lg'
               src={docInfo.image}
               alt='doctor profile photo'
             />
@@ -217,9 +217,9 @@ const Appointment = () => {
                     onClick={() => setSlotIndex(index)}
                     className={`flex items-center flex-shrink-0 gap-2 text-center py-2.5 px-5 min-w-16 rounded-md cursor-pointer transition-all duration-150 ease-in ${
                       slotIndex === index
-                        ? 'border border-primary bg-primary text-white'
+                        ? 'border border-emerald-500  bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500 text-white'
                         : 'border border-gray-200'
-                    } hover:border-primary`}
+                    } hover:border-emerald-500 via-teal-500 to-lime-500 `}
                     key={index}
                   >
                     <p>{item[0] && daysOfWeek[item[0].datetime.getDay()]}</p>
@@ -241,9 +241,9 @@ const Appointment = () => {
                     onClick={() => setSlotTime(item.time)}
                     className={`text-sm tracking-wide font-normal text-gray-700 flex-shrink-0 px-4 py-2.5 rounded-md cursor-pointer transition-all duration-150 ease-in ${
                       item.time === slotTime
-                        ? 'border border-primary bg-primary text-white'
+                        ? 'border border-emerald-500  bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500 text-white'
                         : 'border border-gray-200'
-                    } hover:border-primary`}
+                    } hover:border-emerald-500 via-teal-500 to-lime-500 `}
                     key={index}
                   >
                     {item.time.toLowerCase()}
@@ -257,7 +257,7 @@ const Appointment = () => {
             onClick={bookAppointment}
             className={`flex items-center justify-center gap-2 mt-5 rounded-lg px-5 py-3.5 text-[14px] font-normal tracking-wide ${
               slotTime
-                ? 'bg-primary text-white cursor-pointer active:scale-[96%] transition-all duration-100 ease-in'
+                ? ' bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500 text-white cursor-pointer active:scale-[96%] transition-all duration-100 ease-in'
                 : 'bg-gray-300 text-gray-500 cursor-not-allowed'
             } ${loading ? 'opacity-50 cursor-not-allowed' : ''}`}
             disabled={!slotTime || loading}

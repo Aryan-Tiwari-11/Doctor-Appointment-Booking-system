@@ -26,14 +26,14 @@ const DoctorsList = () => {
   if (isLoading) {
     return (
       <div className='w-full h-[calc(100vh-80px)] flex items-center justify-center'>
-        <Loader2 className='size-14 animate-spin text-primary' />
+        <Loader2 className='size-14 animate-spin text-emerald-500' />
       </div>
     )
   }
 
   return (
     <div className='m-2 w-full sm:w-[80vw] flex flex-col items-center sm:items-start justify-center pb-2 gap-4 sm:p-4 bg-gray-50 rounded'>
-      <h1 className='text-2xl mt-3 sm:mt-0 sm:text-3xl font-semibold px-1 tracking-wide text-primary'>
+      <h1 className='text-2xl mt-3 sm:mt-0 sm:text-3xl font-semibold px-1 tracking-wide text-emerald-500'>
         All Doctors
       </h1>
 
@@ -47,7 +47,7 @@ const DoctorsList = () => {
             transition={{ duration: 0.1, delay: index * 0.05 }}
           >
             <img
-              className='bg-primary/10 group-hover:bg-primary/50 transition-all duration-200 ease-in'
+              className='bg-primary/10 group-hover:bg-primary/30 transition-all duration-200 ease-in'
               src={item.image}
               alt='doctor image'
             />
@@ -72,7 +72,7 @@ const DoctorsList = () => {
                     <TooltipContent
                       side='top'
                       align='center'
-                      className='px-3 py-2.5 mb-1 shadow-xl shadow-black/20 bg-primary text-white border-none rounded-[6px] text-sm text-center capitalize'
+                      className='px-3 py-2.5 mb-1 shadow-xl shadow-black/20 bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500 text-white border-none rounded-[6px] text-sm text-center capitalize'
                     >
                       Click to change <br /> Doctor's availability
                     </TooltipContent>

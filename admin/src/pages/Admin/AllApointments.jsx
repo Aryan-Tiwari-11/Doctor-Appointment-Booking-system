@@ -72,13 +72,13 @@ const AllApointments = () => {
             src={selectedImage}
             alt='Enlarged view'
             draggable='false'
-            className='size-[300px] sm:size-[450px] object-cover rounded-2xl border bg-primary select-none motion-preset-expand motion-duration-300'
+            className='size-[300px] sm:size-[450px] object-cover rounded-2xl border bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500 text-white select-none motion-preset-expand motion-duration-300'
             onClick={e => e.stopPropagation()}
           />
         </div>
       )}
 
-      <h1 className='text-2xl mt-3 sm:mt-0 sm:text-3xl font-semibold px-1 tracking-wide text-primary select-none'>
+      <h1 className='text-2xl mt-3 sm:mt-0 sm:text-3xl font-semibold px-1 tracking-wide text-emerald-500 select-none'>
         All Appointments
       </h1>
 

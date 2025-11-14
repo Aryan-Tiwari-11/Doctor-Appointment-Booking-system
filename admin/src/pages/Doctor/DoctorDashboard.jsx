@@ -36,7 +36,7 @@ const DoctorDashboard = () => {
   if (isLoading) {
     return (
       <div className='w-full sm:w-1/2 h-[calc(100vh-80px)] flex items-center justify-center'>
-        <Loader2 className='size-14 animate-spin text-primary' />
+        <Loader2 className='size-14 animate-spin text-emerald-500' />
       </div>
     )
   }
@@ -60,7 +60,7 @@ const DoctorDashboard = () => {
           </div>
         )}
         {/* Dynamic Title - Greet Doctor based on dayTime */}
-        <h1 className='text-2xl mt-3 sm:mt-0 sm:text-3xl font-semibold px-1 tracking-wide text-primary select-none text-center sm:text-start motion-translate-x-in-[0%] motion-translate-y-in-[-10%] motion-duration-[0.38s] motion-ease-spring-bouncier'>
+        <h1 className='text-2xl mt-3 sm:mt-0 sm:text-3xl font-semibold px-1 tracking-wide text-emerald-500 select-none text-center sm:text-start motion-translate-x-in-[0%] motion-translate-y-in-[-10%] motion-duration-[0.38s] motion-ease-spring-bouncier'>
           {(() => {
             const hours = new Date().getHours()
             let greeting
@@ -79,7 +79,7 @@ const DoctorDashboard = () => {
           {/* ----------- glimpse ------------ */}
           <div className='flex flex-col sm:flex-row items-center justify-center gap-4'>
             {/* doctors */}
-            <div className='bg-white border p-3.5 sm:pl-4 sm:pr-12 sm:py-4 min-w-52 rounded-xl flex items-center gap-4 group hover:bg-primary hover:shadow-xl hover:border-transparent hover:cursor-none transition-all duration-300 ease-in-out'>
+            <div className='bg-white border p-3.5 sm:pl-4 sm:pr-12 sm:py-4 min-w-52 rounded-xl flex items-center gap-4 group hover:bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500 text-white hover:shadow-xl hover:border-transparent hover:cursor-none transition-all duration-300 ease-in-out'>
               <img
                 className='size-12 sm:size-16 rounded-full select-none'
                 draggable='false'
@@ -99,7 +99,7 @@ const DoctorDashboard = () => {
               </div>
             </div>
             {/* patients */}
-            <div className='bg-white border p-3.5 sm:pl-4 sm:pr-12 sm:py-4 min-w-52 rounded-xl flex items-center gap-4 group hover:bg-primary hover:shadow-xl hover:border-transparent hover:cursor-none transition-all duration-300 ease-in-out'>
+            <div className='bg-white border p-3.5 sm:pl-4 sm:pr-12 sm:py-4 min-w-52 rounded-xl flex items-center gap-4 group hover:bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500 text-white hover:shadow-xl hover:border-transparent hover:cursor-none transition-all duration-300 ease-in-out'>
               <img
                 className='size-12 sm:size-16 rounded-full select-none'
                 draggable='false'
@@ -116,7 +116,7 @@ const DoctorDashboard = () => {
               </div>
             </div>
             {/* appointments */}
-            <div className='bg-white border p-3.5 sm:pl-4 sm:pr-12 sm:py-4 min-w-52 rounded-xl flex items-center gap-4 group hover:bg-primary hover:shadow-xl hover:border-transparent hover:cursor-none transition-all duration-300 ease-in-out'>
+            <div className='bg-white border p-3.5 sm:pl-4 sm:pr-12 sm:py-4 min-w-52 rounded-xl flex items-center gap-4 group hover:bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500 text-white hover:shadow-xl hover:border-transparent hover:cursor-none transition-all duration-300 ease-in-out'>
               <img
                 className='size-12 sm:size-16 rounded-full select-none'
                 draggable='false'
@@ -194,7 +194,7 @@ const DoctorDashboard = () => {
                             <TooltipContent
                               side='left'
                               align='center'
-                              className='px-3 py-2 mr-1 text-center rounded-[6px] text-xs tracking-widest border-none bg-primary text-white'
+                              className='px-3 py-2 mr-1 text-center rounded-[6px] text-xs tracking-widest border-none bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500  text-white'
                             >
                               Cancel <br /> Appointment
                             </TooltipContent>
@@ -216,7 +216,7 @@ const DoctorDashboard = () => {
                             <TooltipContent
                               side='right'
                               align='center'
-                              className='px-3 py-2 ml-1 text-center rounded-[6px] text-xs tracking-widest border-none bg-primary text-white'
+                              className='px-3 py-2 ml-1 text-center rounded-[6px] text-xs tracking-widest border-none bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500 text-white'
                             >
                               Mark as <br /> Completed
                             </TooltipContent>

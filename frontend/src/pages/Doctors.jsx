@@ -72,9 +72,9 @@ const Doctors = () => {
         >
           <p
             onClick={() => handleSpecialityClick('General physician')}
-            className={`w-[230px] md:w-auto pl-3 py-2.5 pr-16 border border-gray-300 hover:border-primary rounded-md md:rounded-lg transition-all duration-100 ease-linear cursor-pointer select-none ${
+            className={`w-[230px] md:w-auto pl-3 py-2.5 pr-16 border border-gray-300 hover:border-emerald-500 via-teal-500 to-lime-500  rounded-md md:rounded-lg transition-all duration-100 ease-linear cursor-pointer select-none ${
               speciality === 'General physician'
-                ? 'bg-primary border-primary text-white'
+                ? 'bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500 text-white'
                 : 'bg-white'
             }`}
           >
@@ -82,9 +82,9 @@ const Doctors = () => {
           </p>
           <p
             onClick={() => handleSpecialityClick('Gynecologist')}
-            className={`w-[230px] md:w-auto pl-3 py-2.5 pr-16 border border-gray-300 hover:border-primary rounded-md md:rounded-lg transition-all duration-100 ease-linear cursor-pointer select-none ${
+            className={`w-[230px] md:w-auto pl-3 py-2.5 pr-16 border border-gray-300 hover:border-emerald-500 via-teal-500 to-lime-500 rounded-md md:rounded-lg transition-all duration-100 ease-linear cursor-pointer select-none ${
               speciality === 'Gynecologist'
-                ? 'bg-primary border-primary text-white'
+                ? 'bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500 text-white'
                 : 'bg-white'
             }`}
           >
@@ -92,9 +92,9 @@ const Doctors = () => {
           </p>
           <p
             onClick={() => handleSpecialityClick('Dermatologist')}
-            className={`w-[230px] md:w-auto pl-3 py-2.5 pr-16 border border-gray-300 hover:border-primary rounded-md md:rounded-lg transition-all duration-100 ease-linear cursor-pointer select-none ${
+            className={`w-[230px] md:w-auto pl-3 py-2.5 pr-16 border border-gray-300 hover:border-emerald-500 via-teal-500 to-lime-500  rounded-md md:rounded-lg transition-all duration-100 ease-linear cursor-pointer select-none ${
               speciality === 'Dermatologist'
-                ? 'bg-primary border-primary text-white'
+                ? 'bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500 text-white'
                 : 'bg-white'
             }`}
           >
@@ -102,9 +102,9 @@ const Doctors = () => {
           </p>
           <p
             onClick={() => handleSpecialityClick('Pediatricians')}
-            className={`w-[230px] md:w-auto pl-3 py-2.5 pr-16 border border-gray-300 hover:border-primary rounded-md md:rounded-lg transition-all duration-100 ease-linear cursor-pointer select-none ${
+            className={`w-[230px] md:w-auto pl-3 py-2.5 pr-16 border border-gray-300 hover:border-emerald-500 via-teal-500 to-lime-500  rounded-md md:rounded-lg transition-all duration-100 ease-linear cursor-pointer select-none ${
               speciality === 'Pediatricians'
-                ? 'bg-primary border-primary text-white'
+                ? 'bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500 text-white'
                 : 'bg-white'
             }`}
           >
@@ -112,9 +112,9 @@ const Doctors = () => {
           </p>
           <p
             onClick={() => handleSpecialityClick('Neurologist')}
-            className={`w-[230px] md:w-auto pl-3 py-2.5 pr-16 border border-gray-300 hover:border-primary rounded-md md:rounded-lg transition-all duration-100 ease-linear cursor-pointer select-none ${
+            className={`w-[230px] md:w-auto pl-3 py-2.5 pr-16 border border-gray-300 hover:border-emerald-500 via-teal-500 to-lime-500  rounded-md md:rounded-lg transition-all duration-100 ease-linear cursor-pointer select-none ${
               speciality === 'Neurologist'
-                ? 'bg-primary border-primary text-white'
+                ? 'bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500 text-white'
                 : 'bg-white'
             }`}
           >
@@ -122,9 +122,9 @@ const Doctors = () => {
           </p>
           <p
             onClick={() => handleSpecialityClick('Gastroenterologist')}
-            className={`w-[230px] md:w-auto pl-3 py-2.5 pr-16 border border-gray-300 hover:border-primary rounded-md md:rounded-lg transition-all duration-100 ease-linear cursor-pointer select-none ${
+            className={`w-[230px] md:w-auto pl-3 py-2.5 pr-16 border border-gray-300 hover:border-emerald-500 via-teal-500 to-lime-500  rounded-md md:rounded-lg transition-all duration-100 ease-linear cursor-pointer select-none ${
               speciality === 'Gastroenterologist'
-                ? 'bg-primary border-primary text-white'
+                ? 'bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500 text-white'
                 : 'bg-white'
             }`}
           >

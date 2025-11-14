@@ -48,7 +48,7 @@ const Sidebar = () => {
       {/* mobile menu toggle button */}
       <button
         onClick={toggleMenu}
-        className='pl-1 pr-1.5 py-1 rounded-r bg-primary text-white sm:hidden fixed z-50 mt-4'
+        className='pl-1 pr-1.5 py-1 rounded-r bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500 text-white sm:hidden fixed z-50 mt-4'
       >
         {!isMenuOpen ? <Menu size={24} /> : <X size={24} />}
       </button>
@@ -75,7 +75,7 @@ const Sidebar = () => {
               onClick={handleNavClick}
               className={({ isActive }) =>
                 `flex items-center select-none bg-gray-50 gap-3 py-3.5 px-3 md:px-6 m-2 rounded-[5px] md:min-w-64 cursor-pointer transition-all duration-200 ease-in-out ${
-                  isActive ? 'bg-primary text-white' : 'hover:bg-gray-100'
+                  isActive ? 'bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500 text-white' : 'hover:bg-gray-100'
                 }`
               }
               to={'/admin-dashboard'}
@@ -87,7 +87,7 @@ const Sidebar = () => {
               onClick={handleNavClick}
               className={({ isActive }) =>
                 `flex items-center select-none bg-gray-50 gap-3 py-3.5 px-3 md:px-6 m-2 rounded-[5px] md:min-w-64 cursor-pointer transition-all duration-200 ease-in-out ${
-                  isActive ? 'bg-primary text-white' : 'hover:bg-gray-100'
+                  isActive ? 'bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500 text-white' : 'hover:bg-gray-100'
                 }`
               }
               to={'/all-appointments'}
@@ -99,7 +99,7 @@ const Sidebar = () => {
               onClick={handleNavClick}
               className={({ isActive }) =>
                 `flex items-center select-none bg-gray-50 gap-3 py-3.5 px-3 md:px-6 m-2 rounded-[5px] md:min-w-64 cursor-pointer transition-all duration-200 ease-in-out ${
-                  isActive ? 'bg-primary text-white' : 'hover:bg-gray-100'
+                  isActive ? 'bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500 text-white' : 'hover:bg-gray-100'
                 }`
               }
               to={'/doctor-list'}
@@ -111,7 +111,7 @@ const Sidebar = () => {
               onClick={handleNavClick}
               className={({ isActive }) =>
                 `flex items-center select-none bg-gray-50 gap-3 py-3.5 px-3 md:px-6 m-2 rounded-[5px] md:min-w-64 cursor-pointer transition-all duration-200 ease-in-out ${
-                  isActive ? 'bg-primary text-white' : 'hover:bg-gray-100'
+                  isActive ? 'bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500 text-white' : 'hover:bg-gray-100'
                 }`
               }
               to={'/add-doctor'}
@@ -128,7 +128,7 @@ const Sidebar = () => {
               onClick={handleNavClick}
               className={({ isActive }) =>
                 `flex items-center select-none bg-gray-50 gap-3 py-3.5 px-3 md:px-6 m-2 rounded-[5px] md:min-w-64 cursor-pointer transition-all duration-200 ease-in-out ${
-                  isActive ? 'bg-primary text-white' : 'hover:bg-gray-100'
+                  isActive ? 'bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500 text-white' : 'hover:bg-gray-100'
                 }`
               }
               to={'/doctor-dashboard'}
@@ -140,7 +140,7 @@ const Sidebar = () => {
               onClick={handleNavClick}
               className={({ isActive }) =>
                 `flex items-center select-none bg-gray-50 gap-3 py-3.5 px-3 md:px-6 m-2 rounded-[5px] md:min-w-64 cursor-pointer transition-all duration-200 ease-in-out ${
-                  isActive ? 'bg-primary text-white' : 'hover:bg-gray-100'
+                  isActive ? 'bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500 text-white' : 'hover:bg-gray-100'
                 }`
               }
               to={'/doctor-appointments'}
@@ -152,7 +152,7 @@ const Sidebar = () => {
               onClick={handleNavClick}
               className={({ isActive }) =>
                 `flex items-center select-none bg-gray-50 gap-3 py-3.5 px-3 md:px-6 m-2 rounded-[5px] md:min-w-64 cursor-pointer transition-all duration-200 ease-in-out ${
-                  isActive ? 'bg-primary text-white' : 'hover:bg-gray-100'
+                  isActive ? 'bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500 text-white' : 'hover:bg-gray-100'
                 }`
               }
               to={'/doctor-profile'}

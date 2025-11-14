@@ -131,7 +131,7 @@ const Login = () => {
             <div className='flex w-full items-center justify-center'>
               <button
                 type='submit'
-                className={`flex items-center justify-center gap-4 bg-primary text-white w-full h-12 rounded-md text-base ${
+                className={`flex items-center justify-center gap-4 bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500 text-white w-full h-12 rounded-md text-base ${
                   loading
                     ? 'cursor-not-allowed'
                     : 'hover:opacity-90 active:scale-[90%] transition-all duration-150 ease-in-out'
@@ -155,7 +155,7 @@ const Login = () => {
                 Already have an Account? &nbsp;
                 <span
                   onClick={() => setState('Login')}
-                  className='text-primary font-medium underline cursor-pointer'
+                  className='text-black font-medium underline cursor-pointer'
                 >
                   Login Here
                 </span>
@@ -165,7 +165,7 @@ const Login = () => {
                 Don't have an Account? &nbsp;
                 <span
                   onClick={() => setState('Sign Up')}
-                  className='text-primary font-medium underline cursor-pointer'
+                  className='text-black font-medium underline cursor-pointer'
                 >
                   Click Here
                 </span>

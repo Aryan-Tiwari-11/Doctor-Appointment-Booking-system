@@ -100,7 +100,7 @@ const AddDoctor = () => {
       autoComplete="off" // <-- prevents autofill
       className='m-2 w-full max-w-[800px] flex flex-col items-center sm:items-start justify-center gap-4 p-4 bg-gray-50 rounded'
     >
-      <p className='text-2xl sm:text-3xl font-semibold tracking-wide text-primary'>
+      <p className='text-2xl sm:text-3xl font-semibold tracking-wide text-emerald-500'>
         Doctor Details
       </p>
 
@@ -115,7 +115,7 @@ const AddDoctor = () => {
               />
               <p className='flex items-center justify-center gap-2'>
                 {docImg ? 'Uploaded' : 'Upload Photograph'}
-                {docImg ? <Check size={18} className='text-primary' /> : ''}
+                {docImg ? <Check size={18} className='text-emerald-500' /> : ''}
               </p>
             </div>
           </label>
@@ -286,12 +286,12 @@ const AddDoctor = () => {
           className={`py-3 px-5 rounded w-[50vw] sm:w-fit flex items-center justify-center gap-2 transition-all duration-200 ease-in ${
             !isFormValid() || loading
               ? 'bg-gray-100 border border-gray-300 text-gray-400 cursor-not-allowed'
-              : 'bg-primary text-white border border-primary hover:opacity-90 active:scale-[97%]'
+              : 'bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500 text-white border border-emerald-500 hover:opacity-90 active:scale-[97%]'
           }`}
         >
           <span>{loading ? 'Adding...' : 'Add Doctor'}</span>
           {loading ? (
-            <div className='w-4 h-4 border-2 border-primary border-t-transparent rounded-full animate-spin'></div>
+            <div className='w-4 h-4 border-2 border-emerald-500 border-t-transparent rounded-full animate-spin'></div>
           ) : (
             <SquareCheckBig size={18} />
           )}

@@ -78,7 +78,7 @@ const DoctorProfile = () => {
   return (
     profileData && (
       <div className='m-2 w-full sm:w-[80vw] sm:min-h-[90vh] flex flex-col items-center sm:items-start justify-center sm:justify-start pb-6 gap-4 sm:p-4 bg-gray-50 sm:bg-transparent rounded'>
-        <h1 className='text-2xl mt-3 sm:mt-0 sm:text-3xl font-semibold px-1 tracking-wide text-primary select-none'>
+        <h1 className='text-2xl mt-3 sm:mt-0 sm:text-3xl font-semibold px-1 tracking-wide text-emerald-500 select-none'>
           Profile Details
         </h1>
 
@@ -87,7 +87,7 @@ const DoctorProfile = () => {
             {/* dp */}
             <div className='w-[80vw] sm:w-2/5'>
               <img
-                className='bg-primary rounded w-full'
+                className='bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500 text-white rounded w-full'
                 src={profileData.image}
                 alt='doctor image'
               />
@@ -261,7 +261,7 @@ const DoctorProfile = () => {
                 <button
                   onClick={updateProfile}
                   disabled={!hasChanges() || loading}
-                  className={`flex text-sm items-center justify-between font-medium min-w-32 bg-primary text-white py-4 px-5 rounded transition-all duration-200 ease-linear ${
+                  className={`flex text-sm items-center justify-between font-medium min-w-32 bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500 text-white py-4 px-5 rounded transition-all duration-200 ease-linear ${
                     !hasChanges() || loading
                       ? 'opacity-50 cursor-not-allowed'
                       : 'hover:opacity-90'
@@ -280,7 +280,7 @@ const DoctorProfile = () => {
             ) : (
               <button
                 onClick={handleEditClick}
-                className='flex text-sm items-center justify-between font-medium min-w-24 sm:min-w-32 w-fit bg-primary text-white py-4 px-5 rounded hover:opacity-90 transition-all duration-200 ease-linear'
+                className='flex text-sm items-center justify-between font-medium min-w-24 sm:min-w-32 w-fit bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500 text-white py-4 px-5 rounded hover:opacity-90 transition-all duration-200 ease-linear'
               >
                 Edit
                 <span>

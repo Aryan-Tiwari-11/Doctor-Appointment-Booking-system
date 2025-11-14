@@ -107,7 +107,7 @@ const Login = () => {
           {/* Login Button & Switch Panel */}
           <div className='flex flex-col gap-4 mt-1 w-full items-stretch text-center text-neutral-200'>
             <button
-              className={`bg-primary text-white w-full h-12 rounded-md text-base ${
+              className={`bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500  text-white w-full h-12 rounded-md text-base ${
                 loading
                   ? 'cursor-not-allowed'
                   : 'hover:opacity-90 transition-opacity duration-150 ease-linear'

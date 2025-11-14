@@ -12,7 +12,7 @@ const Footer = () => {
         {/* ---------- left section --------- */}
         <div>
           <img
-            className='mb-5 w-40 pointer-events-none'
+            className='mb-5 w-20 pointer-events-none'
             src={assets.logo}
             alt='app logo'
           />

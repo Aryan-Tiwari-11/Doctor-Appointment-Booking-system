@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <div className='flex justify-between items-end sm:items-center px-4 sm:px-10 py-3 border-b bg-gray-50 select-none'>
       <img
-        className='w-36 sm:w-40 cursor-pointer'
+        className='w-5 sm:w-20 cursor-pointer'
         src={assets.admin_logo}
         alt='logo'
         draggable='false'

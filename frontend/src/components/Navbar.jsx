@@ -75,7 +75,7 @@ const Navbar = () => {
     <div className='flex items-center justify-between text-sm py-4 mb-5 border-b border-b-gray-300'>
       <img
         onClick={() => navigate('/')}
-        className='w-36 md:w-44 cursor-pointer'
+        className='w-5 md:w-20 cursor-pointer'
         draggable='false'
         src={assets.logo}
         alt=''
@@ -84,19 +84,19 @@ const Navbar = () => {
       <ul className='hidden md:flex items-center gap-5 font-medium'>
         <NavLink to={'/'}>
           <li className='py-1'>HOME</li>
-          <hr className='border-none outline-none h-0.5 bg-primary w-full rounded-full m-auto hidden motion-preset-pop motion-duration-500' />
+          <hr className='border-none outline-none h-0.5 bg-black w-full rounded-full m-auto hidden motion-preset-pop motion-duration-500' />
         </NavLink>
         <NavLink to={'/doctors'}>
           <li className='py-1'>ALL DOCTORS</li>
-          <hr className='border-none outline-none h-0.5 bg-primary w-full rounded-full m-auto hidden motion-preset-pop motion-duration-500' />
+          <hr className='border-none outline-none h-0.5 bg-black w-full rounded-full m-auto hidden motion-preset-pop motion-duration-500' />
         </NavLink>
         <NavLink to={'/about'}>
           <li className='py-1'>ABOUT</li>
-          <hr className='border-none outline-none h-0.5 bg-primary w-full rounded-full m-auto hidden motion-preset-pop motion-duration-500' />
+          <hr className='border-none outline-none h-0.5 bg-black w-full rounded-full m-auto hidden motion-preset-pop motion-duration-500' />
         </NavLink>
         <NavLink to={'/contact'}>
           <li className='py-1'>CONTACT</li>
-          <hr className='border-none outline-none h-0.5 bg-primary w-full rounded-full m-auto hidden motion-preset-pop motion-duration-500' />
+          <hr className='border-none outline-none h-0.5 bg-black w-full rounded-full m-auto hidden motion-preset-pop motion-duration-500' />
         </NavLink>
         {/* go to admin-doctor panel */}
         {!token && (
@@ -174,7 +174,7 @@ const Navbar = () => {
               </button>
               <button
                 onClick={() => handleAuthNavigation('signup')}
-                className='bg-primary border border-primary text-white px-4 py-2 rounded font-normal tracking-wide hidden sm:block active:scale-75 transition-all duration-200 ease-in-out'
+                className='bg-black border border-black text-white px-4 py-2 rounded font-normal tracking-wide hidden sm:block active:scale-75 transition-all duration-200 ease-in-out'
               >
                 Sign Up
               </button>
@@ -186,7 +186,7 @@ const Navbar = () => {
           <>
             <button
               onClick={() => handleAuthNavigation('signup')}
-              className='bg-primary border border-primary text-white px-2.5 py-1.5 mr-3 rounded-[4px] font-normal text-xs block sm:hidden active:scale-[90%] transition-transform duration-100 ease-in select-none'
+              className='bg-black border border-black text-white px-2.5 py-1.5 mr-3 rounded-[4px] font-normal text-xs block sm:hidden active:scale-[90%] transition-transform duration-100 ease-in select-none'
             >
               Sign Up
             </button>
@@ -198,7 +198,7 @@ const Navbar = () => {
           <Menu
             onClick={() => setShowMenu(true)}
             size={30}
-            className='md:hidden text-primary'
+            className='md:hidden text-black'
           />
           {/* overlay */}
           {showMenu && (
@@ -220,26 +220,26 @@ const Navbar = () => {
               <X
                 size={30}
                 onClick={() => setShowMenu(false)}
-                className='mr-2 text-primary'
+                className='mr-2 text-black'
               />
             </div>
             {/* navigation links */}
             <ul className='mt-10 uppercase flex flex-col-reverse items-center gap-7 text-base font-medium min-w-full select-none'>
               <NavLink onClick={() => setShowMenu(false)} to={'/'}>
                 <p>Home</p>
-                <hr className='border-none outline-none h-0.5 bg-primary w-full rounded-full m-auto hidden' />
+                <hr className='border-none outline-none h-0.5 bg-black w-full rounded-full m-auto hidden' />
               </NavLink>
               <NavLink onClick={() => setShowMenu(false)} to={'/doctors'}>
                 <p>All Doctors</p>
-                <hr className='border-none outline-none h-0.5 bg-primary w-full rounded-full m-auto hidden' />
+                <hr className='border-none outline-none h-0.5 bg-black w-full rounded-full m-auto hidden' />
               </NavLink>
               <NavLink onClick={() => setShowMenu(false)} to={'/about'}>
                 <p>About</p>
-                <hr className='border-none outline-none h-0.5 bg-primary w-full rounded-full m-auto hidden' />
+                <hr className='border-none outline-none h-0.5 bg-black w-full rounded-full m-auto hidden' />
               </NavLink>
               <NavLink onClick={() => setShowMenu(false)} to={'/contact'}>
                 <p>Contact</p>
-                <hr className='border-none outline-none h-0.5 bg-primary w-full rounded-full m-auto hidden' />
+                <hr className='border-none outline-none h-0.5 bg-black w-full rounded-full m-auto hidden' />
               </NavLink>
 
               {/* go to Admin/doctor panel login */}
@@ -248,7 +248,7 @@ const Navbar = () => {
                   to={'https://booking-admin-snowy.vercel.app'}
                   target='_blank'
                 >
-                  <button className='mb-6 min-w-[124px] h-10 bg-primary text-white font-normal rounded relative'>
+                  <button className='mb-6 min-w-[124px] h-10 bg-black text-white font-normal rounded relative'>
                     <span className='absolute top-1/2 -translate-y-1/2 left-3'>
                       <WordRotate words={['Admin', 'Doctor']} />
                     </span>
